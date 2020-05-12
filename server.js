@@ -57,7 +57,11 @@ io.on('connection',socket=>{
 
 
 
+<<<<<<< HEAD
 const PORT=process.env.PORT || 3000 ;
+=======
+const PORT=process.env.PORT || 3000;
+>>>>>>> changed port configuration
 server.listen(PORT,()=>{
     console.log(`Server started on localhost:${PORT }`);
 });
