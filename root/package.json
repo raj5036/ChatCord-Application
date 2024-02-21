@@ -1,4 +1,5 @@
 {
+  "homepage": "https://raj5036.github.io/ChatCord-Application",
   "name": "real_time_chat_app",
   "version": "1.0.0",
   "description": "Real Time Chat Application with Socket.io",
@@ -6,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "dev":"nodemon server"
+    "dev": "nodemon server",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "Raj",
   "license": "MIT",
@@ -16,6 +19,7 @@
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "nodemon": "^2.0.3"
   }
 }
