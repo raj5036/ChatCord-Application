@@ -3,8 +3,8 @@ const app=express();
 const path=require('path');
 const http=require('http');
 const socketio=require('socket.io');
-const formatMessage=require('./Utils/messages');
-const {userJoin,getCurrentUser,userleaves,getRoomUsers}=require('./Utils/users');
+const formatMessage=require('../Utils/messages');
+const {userJoin,getCurrentUser,userleaves,getRoomUsers}=require('../Utils/users');
 
 const server=http.createServer(app);
 const io=socketio(server);
@@ -57,11 +57,8 @@ io.on('connection',socket=>{
 
 
 
-<<<<<<< HEAD
-const PORT=process.env.PORT || 3000 ;
-=======
+
 const PORT=process.env.PORT || 3000;
->>>>>>> changed port configuration
 server.listen(PORT,()=>{
     console.log(`Server started on localhost:${PORT }`);
 });
